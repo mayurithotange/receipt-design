@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Receipt</title>
+ <style>body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f5f5f5;
+}
+
+.receipt-container {
+    width: 90%;
+    max-width: 600px;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.receipt-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #333;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+.logo {
+    max-width: 100px;
+}
+
+.company-details h1 {
+    margin: 0;
+    font-size: 1.5em;
+}
+
+.receipt-body h2 {
+    margin-top: 0;
+}
+
+.buyer-details {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.items-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.items-table th, .items-table td {
+    border: 1px solid #333;
+    padding: 10px;
+    text-align: left;
+}
+
+.items-table th {
+    background-color: #f0f0f0;
+}
+
+.total-label {
+    text-align: right;
+    padding-right: 20px;
+}
+
+.total-amount {
+    text-align: right;
+}
+
+.receipt-footer {
+    text-align: center;
+    font-size: 0.9em;
+    color: #555;
+}
+</style>
+</head>
+<body>
+    <div class="receipt-container">
+        <header class="receipt-header">
+            <img src="logo1.png" alt="Company Logo" class="logo">
+            <div class="company-details">
+                <h1>Atharv Kirana</h1>
+                <p>1234 hanuman mandir,<br>Amravati, maharashtra.</p>
+            </div>
+        </header>
+        <section class="receipt-body">
+            <h2>Receipt</h2>
+            <p><strong>Date:</strong> May 17, 2024</p>
+            <p><strong>Receipt No:</strong> 0012345</p>
+            <div class="buyer-details">
+                <p><strong>Buyer:</strong></p>
+                <p>sumit kolhe,<br> Lane Dr,<br>Amravati, maharashtra .</p>
+            </div>
+            <table class="items-table">
+                <thead>
+                    <tr>
+                        <th>Description</th>
+                        <th>Quantity</th>
+                        <th>Price</th>
+                        <th>Total</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Sugar</td>
+                        <td>2 kg</td>
+                        <td>80.00</td>
+                        <td>80.00</td>
+                    </tr>
+                    <tr>
+                        <td>Fortune Soya Oil</td>
+                        <td>1 k</td>
+                        <td>150.00</td>
+                        <td>150.00</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="3" class="total-label">Total</td>
+                        <td class="total-amount">230.00</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </section>
+        <footer class="receipt-footer">
+            <p>Thank you for your business!</p>
+        </footer>
+    </div>
+</body>
+</html>
